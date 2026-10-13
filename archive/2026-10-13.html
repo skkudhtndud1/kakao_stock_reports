@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="ko"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>과매도 브리핑 2026-10-13</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans+KR:wght@300;400;500;600&family=IBM+Plex+Serif:wght@600&display=swap">
+<style>
+:root{color-scheme:light;--paper:#f2f4f7;--card:#fff;--card-2:#f7f9fb;--ink:#0e151d;--ink-2:#46566a;
+--ink-3:#7c8ba0;--rule:#dfe5ec;--rule-strong:#c3cedb;--signal:#1857c4;--zone:rgba(24,87,196,.075);
+--signal-ink:#1857c4;--up:#0a8a3f;--down:#c23b3b;
+--shadow:0 1px 2px rgba(14,21,29,.05),0 8px 24px -16px rgba(14,21,29,.28)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){color-scheme:dark;--paper:#0b0f14;
+--card:#141b23;--card-2:#101720;--ink:#e9eef4;--ink-2:#9aabbd;--ink-3:#6b7c8f;--rule:#232c37;
+--rule-strong:#36434f;--signal:#6ba7ff;--zone:rgba(107,167,255,.12);--signal-ink:#8bbaff;
+--up:#3fbf6a;--down:#e66767;--shadow:0 1px 2px rgba(0,0,0,.4),0 8px 24px -16px rgba(0,0,0,.7)}}
+:root[data-theme="dark"]{color-scheme:dark;--paper:#0b0f14;--card:#141b23;--card-2:#101720;
+--ink:#e9eef4;--ink-2:#9aabbd;--ink-3:#6b7c8f;--rule:#232c37;--rule-strong:#36434f;--signal:#6ba7ff;
+--zone:rgba(107,167,255,.12);--signal-ink:#8bbaff;--up:#3fbf6a;--down:#e66767;
+--shadow:0 1px 2px rgba(0,0,0,.4),0 8px 24px -16px rgba(0,0,0,.7)}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);
+font-family:"IBM Plex Sans KR","Malgun Gothic",system-ui,sans-serif;font-weight:300;font-size:16px;
+line-height:1.72;-webkit-font-smoothing:antialiased}
+.wrap{max-width:900px;margin:0 auto;padding:0 24px 90px}
+h1,h2{font-family:"IBM Plex Serif",Georgia,serif;font-weight:600;margin:0;text-wrap:balance;letter-spacing:-.01em}
+p{margin:0}
+a{color:var(--signal-ink);text-decoration-thickness:1px;text-underline-offset:2px}
+:focus-visible{outline:2px solid var(--signal);outline-offset:3px;border-radius:2px}
+header{padding:56px 0 30px;border-bottom:1px solid var(--rule-strong)}
+.eyebrow{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:11.5px;font-weight:500;
+letter-spacing:.16em;text-transform:uppercase;color:var(--ink-3)}
+h1{font-size:clamp(28px,5vw,42px);line-height:1.14;margin-top:13px}
+.meta{display:flex;flex-wrap:wrap;gap:9px 26px;margin-top:20px;
+font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:12.5px;color:var(--ink-2);
+font-variant-numeric:tabular-nums}
+.meta b{color:var(--ink);font-weight:600}
+section{padding-top:48px}
+.sec-head{display:flex;align-items:baseline;flex-wrap:wrap;gap:6px 14px;margin-bottom:18px}
+.sec-head h2{font-size:20px}
+.sec-head .note{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:11.5px;color:var(--ink-3)}
+.panel{background:var(--card);border:1px solid var(--rule);border-radius:4px;box-shadow:var(--shadow)}
+.brief{padding:24px 28px;font-size:16px;color:var(--ink-2);max-width:none}
+.brief p+p{margin-top:12px}
+.brief strong{color:var(--ink);font-weight:500}
+.news-item{padding:19px 28px;border-bottom:1px solid var(--rule)}
+.news-item:last-child{border-bottom:none}
+.news-t{font-size:16px;font-weight:500;color:var(--ink);line-height:1.5;margin-bottom:6px}
+.news-d{font-size:14.5px;color:var(--ink-2);line-height:1.65}
+.news-m{margin-top:9px;font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:11px;
+color:var(--ink-3);display:flex;flex-wrap:wrap;gap:4px 12px;align-items:baseline}
+.scroll{overflow-x:auto}
+table{border-collapse:collapse;width:100%;min-width:600px;font-size:14px}
+th,td{padding:11px 15px;text-align:right;border-bottom:1px solid var(--rule)}
+th{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:10.5px;font-weight:500;
+letter-spacing:.11em;text-transform:uppercase;color:var(--ink-3);background:var(--card-2);
+border-bottom:1px solid var(--rule-strong)}
+th:first-child,td:first-child,th:nth-child(2),td:nth-child(2){text-align:left}
+tbody tr:last-child td{border-bottom:none}
+td.num{font-family:"IBM Plex Mono",ui-monospace,monospace;font-variant-numeric:tabular-nums}
+td.tkr{font-family:"IBM Plex Mono",ui-monospace,monospace;font-weight:600}
+td.nm{color:var(--ink-2);font-size:13.5px}
+td.hot{color:var(--signal-ink);font-weight:600}
+td.up{color:var(--up)}
+td.down{color:var(--down)}
+.chart{padding:24px 26px 14px}
+.legend{display:flex;flex-wrap:wrap;gap:9px 20px;align-items:center;margin-bottom:18px;
+font-size:12.5px;color:var(--ink-2)}
+.legend span{display:inline-flex;align-items:center;gap:7px;
+font-family:"IBM Plex Mono",ui-monospace,monospace}
+.dot-key{width:11px;height:11px;border-radius:50%;background:var(--signal)}
+.dot-key.hollow{background:var(--card);border:2px solid var(--rule-strong)}
+.zone-key{width:16px;height:11px;background:var(--zone);border:1px solid var(--signal);border-radius:2px}
+.chart-inner{min-width:560px}
+.row{display:grid;grid-template-columns:52px 1fr;align-items:center;gap:14px;height:40px}
+.tick{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:13px;font-weight:600}
+.track{position:relative;height:40px}
+.zone{position:absolute;top:0;bottom:0;left:0;background:var(--zone)}
+.zone-edge{position:absolute;top:0;bottom:0;width:1px;background:var(--signal);opacity:.5}
+.grid{position:absolute;top:0;bottom:0;width:1px;background:var(--rule)}
+.bar{position:absolute;top:50%;height:2px;background:var(--rule-strong);transform:translateY(-50%);border-radius:1px}
+.pt{position:absolute;top:50%;width:11px;height:11px;border-radius:50%;
+transform:translate(-50%,-50%);box-shadow:0 0 0 2px var(--card)}
+.pt.rsi{background:var(--signal)}
+.pt.sig{background:var(--card);border:2px solid var(--rule-strong)}
+.val{position:absolute;top:50%;font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:12px;
+font-variant-numeric:tabular-nums;white-space:nowrap}
+.val.l{transform:translate(-100%,-50%);padding-right:10px;color:var(--signal-ink);font-weight:600}
+.val.r{transform:translateY(-50%);padding-left:10px;color:var(--ink-3)}
+.axis{display:grid;grid-template-columns:52px 1fr;gap:14px;margin-top:4px}
+.axis-track{position:relative;height:22px;border-top:1px solid var(--rule-strong)}
+.axis-lab{position:absolute;top:5px;transform:translateX(-50%);
+font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:11px;color:var(--ink-3)}
+.co{padding:20px 28px;border-bottom:1px solid var(--rule)}
+.co:last-child{border-bottom:none}
+.co-hd{display:flex;align-items:baseline;gap:11px;margin-bottom:9px;flex-wrap:wrap}
+.badge{font-family:"IBM Plex Mono",ui-monospace,monospace;font-weight:600;font-size:13px;
+color:var(--card);background:var(--ink);padding:3px 9px;border-radius:3px}
+.co-hd .co-nm{color:var(--ink-2);font-size:14px}
+.co-hd .rsi{margin-left:auto;font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:12px;
+color:var(--signal-ink);font-weight:600}
+.co-note{font-size:14.5px;color:var(--ink-2);line-height:1.65;margin-bottom:10px}
+ul.src{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:6px}
+ul.src li{font-size:13px;line-height:1.5}
+ul.src .m{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:10.5px;color:var(--ink-3)}
+.chips{display:flex;flex-wrap:wrap;gap:7px}
+.chip{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:12px;
+font-variant-numeric:tabular-nums;background:var(--card);border:1px solid var(--rule);
+border-radius:999px;padding:4px 11px;color:var(--ink-2)}
+.chip b{color:var(--ink);font-weight:600}
+.empty{color:var(--ink-3);font-size:13.5px;padding:20px 28px}
+footer{margin-top:56px;padding-top:24px;border-top:1px solid var(--rule-strong);font-size:12.5px;
+color:var(--ink-3);display:flex;flex-direction:column;gap:11px}
+footer p{max-width:76ch;line-height:1.65}
+@media(max-width:600px){.wrap{padding:0 16px 70px}.chart{padding:18px 16px 12px}
+.news-item,.co,.brief{padding-left:18px;padding-right:18px}}
+</style></head><body><div class="wrap">
+
+<header>
+  <div class="eyebrow">2026-10-13 · 과매도 종목 + 핵심 뉴스</div>
+  <h1>아침 브리핑</h1>
+  <div class="meta"><span>발송 <b>2026-10-13 12:05 KST</b></span><span>뉴스 구간 <b>2026-10-12 09:00 ~ 2026-10-13 07:00</b></span><span>미국장 기준일 <b>2026-10-12</b></span><span>분석 <b>200종목</b></span><span>조건 충족 <b>6종목</b></span><span>RSI 중앙값 <b>51.24</b></span></div>
+</header>
+
+<section><div class="sec-head"><h2>간밤 시장</h2></div><div class="panel brief"><p>지난 거래일 미국 증시는 3분기 실적 시즌 기대와 인플레이션 우려가 교차하는 흐름을 보였다. 월요일로 4년차에 들어선 강세장이 여러 불안 요인을 딛고 유지됐지만, 5년차 진입은 더 까다로울 것이라는 전망이 나왔다. 인플레이션은 2026년 정점을 찍었을 가능성이 제기됐지만 예측시장은 당분간 높은 수준이 이어질 것으로 보고 있다. 인도의 9월 소매물가가 예상치를 웃돌며 급등했고, IMF는 AI발 고용 충격 우려를 제기했다. RSI 33 이하 종목은 통신·헬스케어·금융 업종에 걸쳐 6개 나왔다.</p></div></section><section><div class="sec-head"><h2>핵심 뉴스</h2><span class="note">6건 · 후보 6건에서 선별</span></div><div class="panel"><div class="news-item"><p class="news-t">실적 호조가 일상화되는 분위기, 랠리 지속엔 무엇이 필요한가</p><p class="news-d">3분기 실적 시즌에 기업들의 호실적이 이어지며 S&amp;P500의 추가 상승 가능성이 거론되고 있다.</p><div class="news-m"><span>CNBC Earnings</span><span>·</span><span>10/13 05:35 KST</span><span>·</span><span><a href="https://www.cnbc.com/2026/10/07/here-comes-third-quarter-earnings-season-booming-profits-could-propel-the-sp-500-to-new-heights.html" target="_blank" rel="noopener">원문</a></span></div></div><div class="news-item"><p class="news-t">강세장, 월요일로 4주년…5주년 진입은 쉽지 않을 전망</p><p class="news-d">여러 우려를 딛고 4년째 이어진 강세장이 다섯 번째 해를 맞이하기는 더 어려울 수 있다는 투자자들의 평가가 나왔다.</p><div class="news-m"><span>CNBC Finance</span><span>·</span><span>10/13 03:18 KST</span><span>·</span><span><a href="https://www.cnbc.com/2026/10/12/the-bull-market-just-turned-four-after-climbing-a-wall-of-worry.html" target="_blank" rel="noopener">원문</a></span></div></div><div class="news-item"><p class="news-t">인플레이션 2026년 정점 찍었을 가능성, 다만 높은 수준 지속될 듯</p><p class="news-d">예측시장 데이터에 따르면 인플레이션이 올해 고점을 지났을 가능성이 있지만 끈적한(sticky) 흐름은 이어질 것으로 전망된다.</p><div class="news-m"><span>CNBC Finance</span><span>·</span><span>10/13 00:37 KST</span><span>·</span><span><a href="https://www.cnbc.com/2026/10/12/inflation-will-remain-sticky-in-2026-according-to-prediction-markets.html" target="_blank" rel="noopener">원문</a></span></div></div><div class="news-item"><p class="news-t">노벨 경제학상, 로버트 홀·마이클 우드포드 공동 수상</p><p class="news-d">통화정책과 경기변동 연구에 기여한 두 경제학자가 올해 노벨 경제학상을 수상했다.</p><div class="news-m"><span>CNBC Markets</span><span>·</span><span>10/12 23:09 KST</span><span>·</span><span><a href="https://www.cnbc.com/2026/10/12/nobel-economics-prize-winner-woodford-hall.html" target="_blank" rel="noopener">원문</a></span></div></div><div class="news-item"><p class="news-t">인도 9월 소매물가 5.54%로 급등, 예상치 상회</p><p class="news-d">인도의 소비자물가 상승률이 전망치를 웃돌며 급등해 신흥국 인플레이션 우려를 자극했다.</p><div class="news-m"><span>CNBC Markets</span><span>·</span><span>10/12 19:49 KST</span><span>·</span><span><a href="https://www.cnbc.com/2026/10/12/india-inflation-oil-energy-iran-war.html" target="_blank" rel="noopener">원문</a></span></div></div><div class="news-item"><p class="news-t">IMF, AI발 고용 &#x27;쓰나미&#x27; 경고…세계은행 고용위원회, 위기 수준 대책 촉구</p><p class="news-d">IMF가 AI로 인한 고용 충격을 경고하면서 세계은행 산하 고용위원회가 위기 수준의 고용 지원 대책을 요구했다.</p><div class="news-m"><span>CNBC Markets</span><span>·</span><span>10/12 17:58 KST</span><span>·</span><span><a href="https://www.cnbc.com/2026/10/12/imf-world-bank-ai-jobs-inflation-.html" target="_blank" rel="noopener">원문</a></span></div></div></div></section><section><div class="sec-head"><h2>과매도 종목</h2><span class="note">RSI(14) ≤ 33 · RSI 낮은 순</span></div><div class="panel scroll"><table><thead><tr><th>티커</th><th>기업</th><th>시총 순위</th><th>종가</th><th>전일 대비</th><th>RSI(14)</th><th>시그널</th><th>시가총액</th></tr></thead><tbody><tr><td class="tkr">BNY</td><td class="nm">The Bank of New York Mellon Corp</td><td class="num">175</td><td class="num">$142.85</td><td class="num up">+0.10%</td><td class="num hot">27.44</td><td class="num">27.12</td><td class="num">$96.8B</td></tr><tr><td class="tkr">BMY</td><td class="nm">Bristol-Myers Squibb Company</td><td class="num">132</td><td class="num">$57.58</td><td class="num down">-2.60%</td><td class="num hot">28.59</td><td class="num">37.53</td><td class="num">$120.8B</td></tr><tr><td class="tkr">T</td><td class="nm">AT&amp;T Inc.</td><td class="num">105</td><td class="num">$22.49</td><td class="num up">+1.40%</td><td class="num hot">30.03</td><td class="num">41.11</td><td class="num">$152.0B</td></tr><tr><td class="tkr">VZ</td><td class="nm">Verizon Communications Inc.</td><td class="num">85</td><td class="num">$42.78</td><td class="num up">+2.71%</td><td class="num hot">30.20</td><td class="num">34.78</td><td class="num">$173.0B</td></tr><tr><td class="tkr">SNY</td><td class="nm">Sanofi ADS</td><td class="num">170</td><td class="num">$39.74</td><td class="num down">-0.82%</td><td class="num hot">32.33</td><td class="num">31.95</td><td class="num">$97.7B</td></tr><tr><td class="tkr">ING</td><td class="nm">ING Group, N.V.</td><td class="num">174</td><td class="num">$33.39</td><td class="num up">+0.06%</td><td class="num hot">32.46</td><td class="num">42.33</td><td class="num">$96.9B</td></tr></tbody></table></div></section><section><div class="sec-head"><h2>RSI와 시그널선</h2><span class="note">채워진 점 = RSI · 빈 점 = 시그널</span></div><div class="panel chart"><div class="legend"><span><i class="dot-key"></i>RSI(14)</span><span><i class="dot-key hollow"></i>시그널 SMA(14)</span><span><i class="zone-key"></i>과매도 구간</span></div><div class="scroll"><div class="chart-inner"><div class="row"><div class="tick">BNY</div><div class="track"><div class="zone" style="width:43.33%"></div><div class="zone-edge" style="left:43.33%"></div><div class="grid" style="left:16.67%"></div><div class="grid" style="left:33.33%"></div><div class="grid" style="left:50.00%"></div><div class="grid" style="left:66.67%"></div><div class="grid" style="left:83.33%"></div><div class="bar" style="left:23.73%;width:1.07%"></div><div class="val l" style="left:24.80%">27.44</div><div class="pt rsi" style="left:24.80%"></div><div class="pt sig" style="left:23.73%"></div><div class="val r" style="left:23.73%">27.12</div></div></div><div class="row"><div class="tick">BMY</div><div class="track"><div class="zone" style="width:43.33%"></div><div class="zone-edge" style="left:43.33%"></div><div class="grid" style="left:16.67%"></div><div class="grid" style="left:33.33%"></div><div class="grid" style="left:50.00%"></div><div class="grid" style="left:66.67%"></div><div class="grid" style="left:83.33%"></div><div class="bar" style="left:28.63%;width:29.80%"></div><div class="val l" style="left:28.63%">28.59</div><div class="pt rsi" style="left:28.63%"></div><div class="pt sig" style="left:58.43%"></div><div class="val r" style="left:58.43%">37.53</div></div></div><div class="row"><div class="tick">T</div><div class="track"><div class="zone" style="width:43.33%"></div><div class="zone-edge" style="left:43.33%"></div><div class="grid" style="left:16.67%"></div><div class="grid" style="left:33.33%"></div><div class="grid" style="left:50.00%"></div><div class="grid" style="left:66.67%"></div><div class="grid" style="left:83.33%"></div><div class="bar" style="left:33.43%;width:36.93%"></div><div class="val l" style="left:33.43%">30.03</div><div class="pt rsi" style="left:33.43%"></div><div class="pt sig" style="left:70.37%"></div><div class="val r" style="left:70.37%">41.11</div></div></div><div class="row"><div class="tick">VZ</div><div class="track"><div class="zone" style="width:43.33%"></div><div class="zone-edge" style="left:43.33%"></div><div class="grid" style="left:16.67%"></div><div class="grid" style="left:33.33%"></div><div class="grid" style="left:50.00%"></div><div class="grid" style="left:66.67%"></div><div class="grid" style="left:83.33%"></div><div class="bar" style="left:34.00%;width:15.27%"></div><div class="val l" style="left:34.00%">30.20</div><div class="pt rsi" style="left:34.00%"></div><div class="pt sig" style="left:49.27%"></div><div class="val r" style="left:49.27%">34.78</div></div></div><div class="row"><div class="tick">SNY</div><div class="track"><div class="zone" style="width:43.33%"></div><div class="zone-edge" style="left:43.33%"></div><div class="grid" style="left:16.67%"></div><div class="grid" style="left:33.33%"></div><div class="grid" style="left:50.00%"></div><div class="grid" style="left:66.67%"></div><div class="grid" style="left:83.33%"></div><div class="bar" style="left:39.83%;width:1.27%"></div><div class="val l" style="left:41.10%">32.33</div><div class="pt rsi" style="left:41.10%"></div><div class="pt sig" style="left:39.83%"></div><div class="val r" style="left:39.83%">31.95</div></div></div><div class="row"><div class="tick">ING</div><div class="track"><div class="zone" style="width:43.33%"></div><div class="zone-edge" style="left:43.33%"></div><div class="grid" style="left:16.67%"></div><div class="grid" style="left:33.33%"></div><div class="grid" style="left:50.00%"></div><div class="grid" style="left:66.67%"></div><div class="grid" style="left:83.33%"></div><div class="bar" style="left:41.53%;width:32.90%"></div><div class="val l" style="left:41.53%">32.46</div><div class="pt rsi" style="left:41.53%"></div><div class="pt sig" style="left:74.43%"></div><div class="val r" style="left:74.43%">42.33</div></div></div><div class="axis"><div></div><div class="axis-track"><span class="axis-lab" style="left:0.00%">20</span><span class="axis-lab" style="left:16.67%">25</span><span class="axis-lab" style="left:33.33%">30</span><span class="axis-lab" style="left:50.00%">35</span><span class="axis-lab" style="left:66.67%">40</span><span class="axis-lab" style="left:83.33%">45</span><span class="axis-lab" style="left:100.00%">50</span></div></div></div></div></div></section><section><div class="sec-head"><h2>종목별 배경</h2></div><div class="panel"><div class="co"><div class="co-hd"><span class="badge">BNY</span><span class="co-nm">The Bank of New York Mellon Corporation</span><span class="rsi">RSI 27.44</span></div><p class="co-note" style="color:var(--ink-3)">이 구간에 수집된 기사가 없습니다.</p></div><div class="co"><div class="co-hd"><span class="badge">BMY</span><span class="co-nm">Bristol-Myers Squibb Company</span><span class="rsi">RSI 28.59</span></div><p class="co-note" style="color:var(--ink-3)">이 구간에 수집된 기사가 없습니다.</p></div><div class="co"><div class="co-hd"><span class="badge">T</span><span class="co-nm">AT&amp;T Inc.</span><span class="rsi">RSI 30.03</span></div><p class="co-note" style="color:var(--ink-3)">이 구간에 수집된 기사가 없습니다.</p></div><div class="co"><div class="co-hd"><span class="badge">VZ</span><span class="co-nm">Verizon Communications Inc.</span><span class="rsi">RSI 30.20</span></div><p class="co-note" style="color:var(--ink-3)">이 구간에 수집된 기사가 없습니다.</p></div><div class="co"><div class="co-hd"><span class="badge">SNY</span><span class="co-nm">Sanofi ADS</span><span class="rsi">RSI 32.33</span></div><p class="co-note" style="color:var(--ink-3)">이 구간에 수집된 기사가 없습니다.</p></div><div class="co"><div class="co-hd"><span class="badge">ING</span><span class="co-nm">ING Group, N.V.</span><span class="rsi">RSI 32.46</span></div><p class="co-note" style="color:var(--ink-3)">이 구간에 수집된 기사가 없습니다.</p></div></div></section><section><div class="sec-head"><h2>경계권</h2><span class="note">33 &lt; RSI ≤ 40 · 31종목</span></div><div class="chips"><span class="chip">APP <b>33.2</b></span><span class="chip">BBVA <b>33.2</b></span><span class="chip">TMUS <b>33.6</b></span><span class="chip">BAC <b>34.4</b></span><span class="chip">MS <b>34.4</b></span><span class="chip">GS <b>34.4</b></span><span class="chip">BKNG <b>34.4</b></span><span class="chip">RY <b>35.2</b></span><span class="chip">PNC <b>35.3</b></span><span class="chip">HSBC <b>35.4</b></span><span class="chip">SBUX <b>35.8</b></span><span class="chip">HWM <b>36.3</b></span><span class="chip">WDC <b>36.4</b></span><span class="chip">SCHW <b>36.7</b></span><span class="chip">BX <b>37.2</b></span><span class="chip">STX <b>37.4</b></span><span class="chip">GSK <b>37.5</b></span><span class="chip">MCD <b>37.6</b></span><span class="chip">NVO <b>37.6</b></span><span class="chip">USB <b>37.6</b></span><span class="chip">GD <b>38.2</b></span><span class="chip">BMO <b>38.4</b></span><span class="chip">DE <b>38.4</b></span><span class="chip">SNDK <b>38.6</b></span><span class="chip">SKHY <b>38.6</b></span><span class="chip">UBS <b>39.0</b></span><span class="chip">GE <b>39.0</b></span><span class="chip">RTX <b>39.2</b></span><span class="chip">BA <b>39.3</b></span><span class="chip">PEP <b>39.4</b></span><span class="chip">SAN <b>39.4</b></span></div></section>
+
+<footer>
+  <p>Nasdaq 스크리너 시총 상위 종목에서 채권·우선주 등 비보통주를 제외한 뒤 일봉 종가로 Wilder 방식 RSI(14)를 계산했습니다. 시그널선은 RSI의 14일 단순이동평균입니다. 뉴스는 Yahoo Finance·CNBC·WSJ·Seeking Alpha 피드에서 위 구간 기사를 모은 뒤
+  한국어로 정리한 것입니다. 표와 차트의 수치는 스캔 결과를 그대로 옮긴 값입니다.</p>
+  <p>투자 권유가 아닙니다. RSI는 가격 모멘텀만 반영하는 기술적 지표로, 낮은 RSI가 저평가를 뜻하지 않습니다.</p>
+</footer>
+
+</div></body></html>
