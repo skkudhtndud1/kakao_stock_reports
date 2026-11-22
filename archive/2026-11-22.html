@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="ko"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>과매도 브리핑 2026-11-22</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans+KR:wght@300;400;500;600&family=IBM+Plex+Serif:wght@600&display=swap">
+<style>
+:root{color-scheme:light;--paper:#f2f4f7;--card:#fff;--card-2:#f7f9fb;--ink:#0e151d;--ink-2:#46566a;
+--ink-3:#7c8ba0;--rule:#dfe5ec;--rule-strong:#c3cedb;--signal:#1857c4;--zone:rgba(24,87,196,.075);
+--signal-ink:#1857c4;--up:#0a8a3f;--down:#c23b3b;
+--shadow:0 1px 2px rgba(14,21,29,.05),0 8px 24px -16px rgba(14,21,29,.28)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){color-scheme:dark;--paper:#0b0f14;
+--card:#141b23;--card-2:#101720;--ink:#e9eef4;--ink-2:#9aabbd;--ink-3:#6b7c8f;--rule:#232c37;
+--rule-strong:#36434f;--signal:#6ba7ff;--zone:rgba(107,167,255,.12);--signal-ink:#8bbaff;
+--up:#3fbf6a;--down:#e66767;--shadow:0 1px 2px rgba(0,0,0,.4),0 8px 24px -16px rgba(0,0,0,.7)}}
+:root[data-theme="dark"]{color-scheme:dark;--paper:#0b0f14;--card:#141b23;--card-2:#101720;
+--ink:#e9eef4;--ink-2:#9aabbd;--ink-3:#6b7c8f;--rule:#232c37;--rule-strong:#36434f;--signal:#6ba7ff;
+--zone:rgba(107,167,255,.12);--signal-ink:#8bbaff;--up:#3fbf6a;--down:#e66767;
+--shadow:0 1px 2px rgba(0,0,0,.4),0 8px 24px -16px rgba(0,0,0,.7)}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);
+font-family:"IBM Plex Sans KR","Malgun Gothic",system-ui,sans-serif;font-weight:300;font-size:16px;
+line-height:1.72;-webkit-font-smoothing:antialiased}
+.wrap{max-width:900px;margin:0 auto;padding:0 24px 90px}
+h1,h2{font-family:"IBM Plex Serif",Georgia,serif;font-weight:600;margin:0;text-wrap:balance;letter-spacing:-.01em}
+p{margin:0}
+a{color:var(--signal-ink);text-decoration-thickness:1px;text-underline-offset:2px}
+:focus-visible{outline:2px solid var(--signal);outline-offset:3px;border-radius:2px}
+header{padding:56px 0 30px;border-bottom:1px solid var(--rule-strong)}
+.eyebrow{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:11.5px;font-weight:500;
+letter-spacing:.16em;text-transform:uppercase;color:var(--ink-3)}
+h1{font-size:clamp(28px,5vw,42px);line-height:1.14;margin-top:13px}
+.meta{display:flex;flex-wrap:wrap;gap:9px 26px;margin-top:20px;
+font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:12.5px;color:var(--ink-2);
+font-variant-numeric:tabular-nums}
+.meta b{color:var(--ink);font-weight:600}
+section{padding-top:48px}
+.sec-head{display:flex;align-items:baseline;flex-wrap:wrap;gap:6px 14px;margin-bottom:18px}
+.sec-head h2{font-size:20px}
+.sec-head .note{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:11.5px;color:var(--ink-3)}
+.panel{background:var(--card);border:1px solid var(--rule);border-radius:4px;box-shadow:var(--shadow)}
+.brief{padding:24px 28px;font-size:16px;color:var(--ink-2);max-width:none}
+.brief p+p{margin-top:12px}
+.brief strong{color:var(--ink);font-weight:500}
+.news-item{padding:19px 28px;border-bottom:1px solid var(--rule)}
+.news-item:last-child{border-bottom:none}
+.news-t{font-size:16px;font-weight:500;color:var(--ink);line-height:1.5;margin-bottom:6px}
+.news-d{font-size:14.5px;color:var(--ink-2);line-height:1.65}
+.news-m{margin-top:9px;font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:11px;
+color:var(--ink-3);display:flex;flex-wrap:wrap;gap:4px 12px;align-items:baseline}
+.scroll{overflow-x:auto}
+table{border-collapse:collapse;width:100%;min-width:600px;font-size:14px}
+th,td{padding:11px 15px;text-align:right;border-bottom:1px solid var(--rule)}
+th{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:10.5px;font-weight:500;
+letter-spacing:.11em;text-transform:uppercase;color:var(--ink-3);background:var(--card-2);
+border-bottom:1px solid var(--rule-strong)}
+th:first-child,td:first-child,th:nth-child(2),td:nth-child(2){text-align:left}
+tbody tr:last-child td{border-bottom:none}
+td.num{font-family:"IBM Plex Mono",ui-monospace,monospace;font-variant-numeric:tabular-nums}
+td.tkr{font-family:"IBM Plex Mono",ui-monospace,monospace;font-weight:600}
+td.nm{color:var(--ink-2);font-size:13.5px}
+td.hot{color:var(--signal-ink);font-weight:600}
+td.up{color:var(--up)}
+td.down{color:var(--down)}
+.chart{padding:24px 26px 14px}
+.legend{display:flex;flex-wrap:wrap;gap:9px 20px;align-items:center;margin-bottom:18px;
+font-size:12.5px;color:var(--ink-2)}
+.legend span{display:inline-flex;align-items:center;gap:7px;
+font-family:"IBM Plex Mono",ui-monospace,monospace}
+.dot-key{width:11px;height:11px;border-radius:50%;background:var(--signal)}
+.dot-key.hollow{background:var(--card);border:2px solid var(--rule-strong)}
+.zone-key{width:16px;height:11px;background:var(--zone);border:1px solid var(--signal);border-radius:2px}
+.chart-inner{min-width:560px}
+.row{display:grid;grid-template-columns:52px 1fr;align-items:center;gap:14px;height:40px}
+.tick{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:13px;font-weight:600}
+.track{position:relative;height:40px}
+.zone{position:absolute;top:0;bottom:0;left:0;background:var(--zone)}
+.zone-edge{position:absolute;top:0;bottom:0;width:1px;background:var(--signal);opacity:.5}
+.grid{position:absolute;top:0;bottom:0;width:1px;background:var(--rule)}
+.bar{position:absolute;top:50%;height:2px;background:var(--rule-strong);transform:translateY(-50%);border-radius:1px}
+.pt{position:absolute;top:50%;width:11px;height:11px;border-radius:50%;
+transform:translate(-50%,-50%);box-shadow:0 0 0 2px var(--card)}
+.pt.rsi{background:var(--signal)}
+.pt.sig{background:var(--card);border:2px solid var(--rule-strong)}
+.val{position:absolute;top:50%;font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:12px;
+font-variant-numeric:tabular-nums;white-space:nowrap}
+.val.l{transform:translate(-100%,-50%);padding-right:10px;color:var(--signal-ink);font-weight:600}
+.val.r{transform:translateY(-50%);padding-left:10px;color:var(--ink-3)}
+.axis{display:grid;grid-template-columns:52px 1fr;gap:14px;margin-top:4px}
+.axis-track{position:relative;height:22px;border-top:1px solid var(--rule-strong)}
+.axis-lab{position:absolute;top:5px;transform:translateX(-50%);
+font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:11px;color:var(--ink-3)}
+.co{padding:20px 28px;border-bottom:1px solid var(--rule)}
+.co:last-child{border-bottom:none}
+.co-hd{display:flex;align-items:baseline;gap:11px;margin-bottom:9px;flex-wrap:wrap}
+.badge{font-family:"IBM Plex Mono",ui-monospace,monospace;font-weight:600;font-size:13px;
+color:var(--card);background:var(--ink);padding:3px 9px;border-radius:3px}
+.co-hd .co-nm{color:var(--ink-2);font-size:14px}
+.co-hd .rsi{margin-left:auto;font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:12px;
+color:var(--signal-ink);font-weight:600}
+.co-note{font-size:14.5px;color:var(--ink-2);line-height:1.65;margin-bottom:10px}
+ul.src{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:6px}
+ul.src li{font-size:13px;line-height:1.5}
+ul.src .m{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:10.5px;color:var(--ink-3)}
+.chips{display:flex;flex-wrap:wrap;gap:7px}
+.chip{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:12px;
+font-variant-numeric:tabular-nums;background:var(--card);border:1px solid var(--rule);
+border-radius:999px;padding:4px 11px;color:var(--ink-2)}
+.chip b{color:var(--ink);font-weight:600}
+.empty{color:var(--ink-3);font-size:13.5px;padding:20px 28px}
+footer{margin-top:56px;padding-top:24px;border-top:1px solid var(--rule-strong);font-size:12.5px;
+color:var(--ink-3);display:flex;flex-direction:column;gap:11px}
+footer p{max-width:76ch;line-height:1.65}
+@media(max-width:600px){.wrap{padding:0 16px 70px}.chart{padding:18px 16px 12px}
+.news-item,.co,.brief{padding-left:18px;padding-right:18px}}
+</style></head><body><div class="wrap">
+
+<header>
+  <div class="eyebrow">2026-11-22 · 핵심 뉴스</div>
+  <h1>아침 브리핑</h1>
+  <div class="meta"><span>발송 <b>2026-11-22 11:23 KST</b></span><span>뉴스 구간 <b>2026-11-21 09:00 ~ 2026-11-22 07:00</b></span></div>
+</header>
+
+<section><div class="sec-head"><h2>간밤 시장</h2></div><div class="panel brief"><p>엔비디아를 둘러싼 캘리포니아 당국의 조사가 형사 위반 가능성까지 거론되며 반도체 업종에 부담으로 작용했다.</p><p>아마존의 AI 스타트업 디카트 인수 추진 소식과 테슬라의 FSD 15 출시 계획 발표 등 빅테크 관련 뉴스가 이어졌다.</p><p>장기 국채 금리는 하락했지만 리츠·부동산주는 전반적인 시장 약세에 동반 하락했다.</p><p>트럼프 대통령은 신용카드 금리 상한을 두고 민주당과 협력을 추진한다고 밝혔다.</p><p>이번 주에는 팔로알토네트웍스, 다이아몬드백에너지, 일라이릴리 등 주요 기업들의 실적 발표가 예정돼 있다.</p></div></section><section><div class="sec-head"><h2>핵심 뉴스</h2><span class="note">7건 · 후보 9건에서 선별</span></div><div class="panel"><div class="news-item"><p class="news-t">엔비디아, 캘리포니아주 수사 형사 위반 혐의로 확대 - 블룸버그</p><p class="news-d">블룸버그에 따르면 캘리포니아 당국의 엔비디아 관련 조사가 잠재적 형사 위반 혐의로까지 확대됐다.</p><div class="news-m"><span>Seeking Alpha</span><span>·</span><span>11/22 04:46 KST</span><span>·</span><span><a href="https://seekingalpha.com/news/4675398-nvidia-probed-over-criminal-violations-california?utm_source=feed_news_all&amp;utm_medium=referral&amp;feed_item_type=news" target="_blank" rel="noopener">원문</a></span></div></div><div class="news-item"><p class="news-t">아마존, AI 스타트업 디카트 75억 달러 인수 추진 - FT</p><p class="news-d">파이낸셜타임스에 따르면 아마존이 AI 스타트업 디카트를 약 75억 달러에 인수하는 방안을 논의 중이다.</p><div class="news-m"><span>Seeking Alpha</span><span>·</span><span>11/22 03:04 KST</span><span>·</span><span><a href="https://seekingalpha.com/news/4675396-amazon-nears-75b-deal-buy-ai-start-up-decart?utm_source=feed_news_all&amp;utm_medium=referral&amp;feed_item_type=news" target="_blank" rel="noopener">원문</a></span></div></div><div class="news-item"><p class="news-t">트럼프, 신용카드 금리 상한 두고 민주당과 협력 추진</p><p class="news-d">트럼프 대통령이 신용카드 이자율 상한 설정을 위해 민주당과 공동 작업을 추진하겠다고 밝혔다.</p><div class="news-m"><span>Seeking Alpha</span><span>·</span><span>11/22 03:34 KST</span><span>·</span><span><a href="https://seekingalpha.com/news/4675397-trump-work-with-dems-cap-credit-card-interest-rate?utm_source=feed_news_all&amp;utm_medium=referral&amp;feed_item_type=news" target="_blank" rel="noopener">원문</a></span></div></div><div class="news-item"><p class="news-t">테슬라, 내달 FSD 15 출시 예정 - 머스크</p><p class="news-d">일론 머스크가 테슬라의 완전자율주행(FSD) 버전 15를 다음 달 출시할 것이라고 밝혔다.</p><div class="news-m"><span>Seeking Alpha</span><span>·</span><span>11/22 02:23 KST</span><span>·</span><span><a href="https://seekingalpha.com/news/4675395-tesla-launch-fsd-15-next-month-elon-musk?utm_source=feed_news_all&amp;utm_medium=referral&amp;feed_item_type=news" target="_blank" rel="noopener">원문</a></span></div></div><div class="news-item"><p class="news-t">국채 금리 하락에도 리츠·부동산주는 전반적 시장과 동반 하락</p><p class="news-d">장기 국채 금리가 하락했음에도 부동산 관련주들은 전반적인 시장 약세와 함께 하락했다.</p><div class="news-m"><span>Seeking Alpha</span><span>·</span><span>11/22 02:00 KST</span><span>·</span><span><a href="https://seekingalpha.com/news/4675287-real-estate-stocks-dip-alongside-broader-markets-even-as-long-term-yields-go-down?utm_source=feed_news_all&amp;utm_medium=referral&amp;feed_item_type=news" target="_blank" rel="noopener">원문</a></span></div></div><div class="news-item"><p class="news-t">이번 주 주요 실적 발표: PANW, FANG, ZS, LLY 등</p><p class="news-d">이번 주 팔로알토네트웍스, 다이아몬드백에너지, 스케일러, 일라이릴리 등 주요 기업들의 실적 발표가 예정돼 있다.</p><div class="news-m"><span>Seeking Alpha</span><span>·</span><span>11/22 05:15 KST</span><span>·</span><span><a href="https://seekingalpha.com/news/4675391-key-deals-this-week-panw-fang-zs-lly-and-more?utm_source=feed_news_all&amp;utm_medium=referral&amp;feed_item_type=news" target="_blank" rel="noopener">원문</a></span></div></div><div class="news-item"><p class="news-t">중국, 정상외교로 글로벌 영향력 확대 모색</p><p class="news-d">중국이 시진핑-트럼프-푸틴 등 정상회담을 활용해 글로벌 외교 영향력을 확대하려는 움직임을 보이고 있다.</p><div class="news-m"><span>CNBC Finance</span><span>·</span><span>11/21 15:00 KST</span><span>·</span><span><a href="https://www.cnbc.com/2026/11/21/china-xi-trump-putin-global-diplomacy-shenzhen.html" target="_blank" rel="noopener">원문</a></span></div></div></div></section>
+
+<footer>
+  <p>일·월요일 아침에는 새로 마감된 미국장이 없어 RSI 섹션을 싣지 않습니다. 뉴스는 Yahoo Finance·CNBC·WSJ·Seeking Alpha 피드에서 위 구간 기사를 모은 뒤
+  한국어로 정리한 것입니다. 표와 차트의 수치는 스캔 결과를 그대로 옮긴 값입니다.</p>
+  <p>투자 권유가 아닙니다. RSI는 가격 모멘텀만 반영하는 기술적 지표로, 낮은 RSI가 저평가를 뜻하지 않습니다.</p>
+</footer>
+
+</div></body></html>
